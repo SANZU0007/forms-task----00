@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form and Table Example</title>
+	<style>
+        *{
+            background-color: rgba(244, 253, 117, 0.932);
+        }
+		form {
+			margin: 20px;
+		}
+		input[type="text"], select {
+			padding: 10px;
+			margin: 10px;
+			width: 200px;
+			border-radius: 5px;
+			border: none;
+			box-shadow: 1px 1px 3px rgba(253, 11, 11, 0.925);
+		}
+		input[type="radio"] {
+			margin: 10px;
+		}
+		input[type="submit"] {
+			padding: 10px;
+			margin: 10px;
+			background-color: #008CBA;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+		}
+		table {
+			margin: 20px;
+			border-collapse: collapse;
+			width: 100%;
+		}
+		th, td {
+			padding: 10px;
+			text-align: left;
+			border-bottom: 1px solid #ddd;
+		}
+		th {
+			background-color: #008CBA;
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<label for="firstname">First Name:</label>
+		<input type="text" id="firstname" name="firstname" required>
+	<label for="lastname">Last Name:</label>
+	<input type="text" id="lastname" name="lastname" required>
+
+	<label for="address">Address:</label>
+	<input type="text" id="address" name="address" required>
+
+	<label for="pincode">Pincode:</label>
+	<input type="text" id="pincode" name="pincode" required>
+
+	<label for="gender">Gender:</label>
+	<input type="radio" id="male" name="gender" value="male" required>
+	<label for="male">Male</label>
+	<input type="radio" id="female" name="gender" value="female" required>
+	<label for="female">Female</label>
+
+	<label for="food">Choice of Food:</label>
+	<select id="food" name="food" required>
+		<option value="">Select food</option>
+		<option value="pizza">Pizza</option>
+		<option value="burger">Burger</option>
+		<option value="sandwich">Sandwich</option>
+		<option value="pasta">Pasta</option>
+		<option value="salad">Salad</option>
+	</select>
+
+	<input type="submit" value="Submit">
+</form>
+
+
+</body>
+</html>
+
+
